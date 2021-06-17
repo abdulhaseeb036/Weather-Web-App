@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+    {{>header}}
+    <!-- Main Header -->
+    <div class="container-fluid main_hero-weather">
+        <div class="row mx-auto">
+            <div class="col-md-10 col-12 col-lg-10">
+                <form class="form">
+                    <div class="inputsWeather">
+                        <input id="inpSearch" type="text" placeholder="Search Wth City Name" autocomplete=false>
+                        <input id="inpSearchBtn" type="submit" value="Search">
+                    </div>
+                </form>
+                <div class="weatherBox">
+                    <div class="upperSection">
+                        <p id="din" class="din"></p>
+                        <p id="Day" class="Day"></p>
+                    </div>
+                    <div class="WeahterBoxContent">
+                        <div class="cityName">
+                            <h5 id="Output_Msg" class="Output_Msg">Get Output Here</h5>
+                        </div>
+                        <div class="tempResultDiv hide_data">
+                            <p id="temp" class="finaltemp">23 <sup>0</sup> C<span></span></p>
+                            <i id="tempStatus" class="fas fa-cloud TempCondition"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
