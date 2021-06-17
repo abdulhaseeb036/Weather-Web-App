@@ -25,7 +25,6 @@ datee.innerText = `${currentDateofDay} / ${currentMonth} / ${currentYear}`;
 let weekday = date_time.getDay();
 var weekdayString = ['Sun', 'Mon' , 'Tue', 'Wed', 'Thur','Fri', 'Sat'];
 din.innerText = weekdayString[weekday];
-// console.log(weekdayString[weekday]);
 
 
 // Event search
@@ -39,7 +38,7 @@ const getValueFromSearch  = async(event) => {
     }
     else {
         try {
-            url = `http://api.openweathermap.org/data/2.5/weather?q=${inpSearch.value}&units=metric&appid=d15c0ba591efec3993eef5e6fd0c0d90`;
+            url = `https://api.openweathermap.org/data/2.5/weather?q=${inpSearch.value}&units=metric&appid=d15c0ba591efec3993eef5e6fd0c0d90`;
             const response = await fetch(url);
             data = await response.json();
             arryData = [data];
